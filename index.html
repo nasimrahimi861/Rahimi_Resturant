@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+            height: 60px;
+            padding: 0 5%;
+        }
+        .logo a{
+            font-size: 18px;
+            font-family:'Times New Roman', Times, serif;
+            color: yellow;
+            font-weight: bold;
+           white-space: nowrap;
+           text-decoration: none;
+        }
+        .navBar ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .navBar a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+        .navBar a:hover{
+            color: yellow;
+        }
+        .icons {
+           display: flex;
+           gap: 20px; 
+        }
+        .icons img{
+            width: 22px;
+            height: 22px;
+            filter: brightness(0) invert(1);
+            transition: 0.3s ease;
+        }
+        .icons img:hover{
+            transform: scale(1.15);
+        }
+        .bookatable{
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            background-color:yellow;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .bookatable:hover{
+            transform:translateY(-2px);
+        }
+        .hero {
+        height: 550px;
+        width: 100%;
+        background:
+        linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.50)
+        ),
+        url("./photos/hero1.jpg");
+        background-size:cover;
+        background-position: center;
+        }
+        .herowriting h1, 
+        .herowriting p{
+            color: white;
+        }
+        .herowriting p{
+            padding-top: 10px;
+        }
+        .herowriting{
+            padding-top: 120px;
+            padding-left: 70px;
+        }
+        .herowriting h1{
+            font-size: 64px;
+        }
+        .herowriting h1 span{
+            color: yellow;
+        }
+        .herobuttons{
+            padding-left: 70px;
+            padding-top: 30px;
+        }
+        .explorebutton{
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            background-color: rgb(241, 180, 64);
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .explorebutton:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgb(241 180 64 / 0.4);
+        }
+        .explorebutton span{
+            color: black;
+        }
+        .bookingbutton{
+            border-radius: 25px;
+            border: 1px solid  rgb(241, 180, 64);
+            outline: none;
+            padding: 10px 30px;
+            margin-left: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .bookingbutton:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="#">Rahimi Restaurant</a></div>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+                <a href="#"><img src="./photos/search.svg" alt="search"></a>  
+                <a href="#"><img src="./photos/cart.svg" alt="cart"></a>
+        </div>
+        <div class="booking">
+           <a href="#">  <button class="bookatable">Book a Table</button>  </a> 
+        </div>
+    
+    </header>
+        
+    <section class="hero">
+        <div class="herowriting">
+        <p>Welcome to Rahimi Restaurant</p>
+        <h1> Taste the <br> <span>difference</span></h1>
+        <p> Fresh Taste, Unforgettable Moments</p>
+        <p> Delicious food made with fresh ingredients, rich flavors, and a passion for great dining.</p>
+        </div>
+        <div class="herobuttons">
+        <a href="#"><button class="explorebutton">Explore Menu <span>&#10132</span></button></a>
+        <a href="#"><button class="bookingbutton">Book a Table</button></a>
+        </div>
+    </section>
+</body>
+</html>
