@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Rahimi Restaurant </title>
     <style>
         *{
             margin: 0;
@@ -133,6 +133,64 @@
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
         }
+        .populardishes{
+            padding: 10px 70px;
+        }
+        
+        .specialdishestittle{
+            display: flex;
+            justify-content: space-between;
+        }
+        .specialdishestittle a{
+            text-decoration: none;
+            color: black;
+        }
+        .Specialdishescards{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+    
+        .dishcard{
+            width: 230px;
+            padding: 15px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .dishcardimg{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        } 
+        .cartbutton{
+            background-color: #101820;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cartbuttonimg{
+            width: 15px;
+            height: 15px;
+            filter: brightness(0) invert(1);
+        }
+        .cartbutton:hover{
+            background-color: #e9ad32;
+        }
+        .pricestyle{
+            color: #e9ad32;
+        }
+        .cartandpricestyle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -169,5 +227,16 @@
         <a href="#"><button class="bookingbutton">Book a Table</button></a>
         </div>
     </section>
+    <section class="populardishes">
+        <p style="color: #e9ad32;">Popular Dishes</p>
+        <div class="specialdishestittle">
+            <h1>Our Special Dishes</h1>
+            <a href="#">view more &#10132</a> 
+        </div>
+        <div class="Specialdishescards">
+
+        </div>
+    </section>
+    <script src="./JS/specialdishescards.js"></script>
 </body>
 </html>
