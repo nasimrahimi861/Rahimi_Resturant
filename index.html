@@ -197,6 +197,7 @@
              background-color: #0b1417;
              padding: 50px 6%;
              color: white;
+             margin-top: 5px;
         }
         .chooseuscontainer{
             display: grid;
@@ -272,6 +273,21 @@
         background-color: #ffffff;
         transform: translateY(-3px);
       }
+      .customer_comments_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+      .customerimgandname{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+      .customerimg{
+        width: 45px;
+        height: 45px;
+      }
     </style>
 </head>
 <body>
@@ -335,6 +351,15 @@
         </div>
     </section>
 
+    <section class="customer_comments">
+        <h1>What Our <span>Guests</span> Say</h1>
+
+        <div class="customer_comments_container">
+
+        </div>
+
+    </section>
+
     <section class="whychooseus">
         <h2>Why Choose us?</h2>
         <div class="chooseuscontainer">
@@ -343,5 +368,6 @@
     </section>
     <script src="./JS/specialdishescards.js"></script>
     <script src="./JS/whychooseUsCards.js"></script>
+    <script src="./JS/customer_comments.js"></script>
 </body>
 </html>
