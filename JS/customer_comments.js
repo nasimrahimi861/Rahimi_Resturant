@@ -13,7 +13,7 @@ let comments = [
     },
     {
         photo: "./photos/user.svg",
-        name: "Assadullah Sarwari",
+        name: "Assadullah ",
         comment: "Delicious foods + best services. Thanks rahimi restaurant",
         ratting: "★★★★★ "
     },
@@ -24,6 +24,7 @@ let comment_container = document.querySelector('.customer_comments_container');
 comments.forEach((cards) =>{
     
     let card_container = document.createElement('div');
+    card_container.classList.add('user_comment_crds');
 
     let user_photo_name = document.createElement('div');
     user_photo_name.classList.add('customerimgandname');
@@ -40,6 +41,7 @@ comments.forEach((cards) =>{
 
     let user_ratting = document.createElement('p');
     user_ratting.textContent = cards.ratting
+    user_ratting.classList.add('ratting');
 
     user_photo_name.append(image, user_name);
     card_container.append(user_photo_name, user_idea, user_ratting);

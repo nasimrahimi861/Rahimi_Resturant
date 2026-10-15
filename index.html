@@ -273,20 +273,43 @@
         background-color: #ffffff;
         transform: translateY(-3px);
       }
+      .customer_comments h1{
+        margin-top: 10px;
+        text-align: center;
+        color:#f4bd48;
+      }
       .customer_comments_container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+        padding: 30px;
+        gap: 40px;
+       
+    }
+    .user_comment_crds{
+            width: 250px;
+            padding: 15px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: 0.3s ease;
+    }
+    .user_comment_crds:hover{
+        transform: scale(1.2);
+        background-color: #cab588;
     }
       .customerimgandname{
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        
+        align-items: center;     
       }
       .customerimg{
         width: 45px;
         height: 45px;
+      }
+      .ratting{
+        color:#f4bd48;
+        font-size: 22px;
       }
     </style>
 </head>
