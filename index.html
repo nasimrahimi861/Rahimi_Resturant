@@ -356,11 +356,12 @@
             color: #f4bd48;
             font-size: 22px;
         }
-
+        footer{
+            background-color: black;
+        }
         .footer_container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            background-color: black;
             padding: 20px 70px;
             margin-top: 1px;
             gap: 80px;
@@ -435,18 +436,18 @@
             color: white;
             font-family:Georgia, 'Times New Roman', Times, serif;
             font-weight: 400;
-            text-align: justify;
+            text-align: left;
             line-height: 1.7;
             margin: 10px 0px;
         }
         .footer_quickLinks{
             color: white;
         }
-        .footer_quickLinks h2{
+        .footer_quickLinks h2, .footer_contact h2, .footer_opening_hours h2{
             color: #f4bd48;
             margin-bottom: 15px;
         }
-        .footer_quickLinks h2 span{
+        .footer_quickLinks h2 span, .footer_contact h2 span, .footer_opening_hours h2 span{
             border-bottom: 2px solid #f4bd48;
             padding-bottom: 5px;
         }
@@ -474,6 +475,74 @@
         .quick_links span:hover{
             color: #f4bd48;
         }
+        .location, .contact_Phone, .contact_email{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .contact_info_images img{
+            width: 35px;
+            height: 35px;
+            filter: brightness(0) saturate(100%) invert(79%) sepia(48%) saturate(795%)
+            hue-rotate(344deg) brightness(101%) contrast(91%);  
+            border: 1px solid #f4bd48;
+            border-radius: 50%; 
+            transition: 0.3s ease;
+        }
+        .contact_info_images img:hover{
+            transform: scale(0.7);
+        }
+        .location h3{
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+        }
+        .location a{
+            text-decoration: none;
+            color: #f4bd48;
+        }
+        .contact_email a, p,
+         .contact_Phone a, p{
+            text-decoration: none;
+            color: white;
+        }
+        .footer_opening_hours img{
+            width: 35px;
+            height: 35px;
+            filter: brightness(0) saturate(100%) invert(79%) sepia(48%) saturate(795%)
+            hue-rotate(344deg) brightness(101%) contrast(91%);  
+            border: 1px solid #f4bd48;
+            border-radius: 50%; 
+            transition: 0.3s ease;
+        }
+        .footer_opening_hours_contain{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .footer_opening_hours hr{
+            filter: brightness(0) saturate(100%) invert(79%) sepia(48%) saturate(795%)
+            hue-rotate(344deg) brightness(101%) contrast(91%);  
+        }
+        .footer_opening_hours h3{
+            margin-top: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:#f4bd48;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #footnote{
+            border-top: 1px solid #444;
+            text-align: center;
+            margin-top: 15px;
+            padding: 20px;
+        }
+        
     </style>
 </head>
 
@@ -580,10 +649,48 @@
                 </div>
             </div>
             <div class="footer_contact">
-                
+                <h2> <span>Contact</span> Info</h2>
+                <div class="location">
+                    <div class="contact_info_images">
+                        <img src="./photos/location.svg" alt="location">
+                    </div>
+                    <div class="info">
+                        <h3>Kandahar, Afghansitan</h3>
+                        <a href="www.googlemap.com">View on Google Map &#10132</a>
+                    </div>
+                </div>
+                <div class="contact_Phone">
+                    <div class="contact_info_images">
+                        <img src="./photos/phone.svg" alt="Phone number">
+                    </div>
+                    <div class="info">
+                        <a href="tel:+93700078001" >+93700078001</a>
+                        <p>Call us anytime</p>
+                    </div>
+                </div>
+                <div class="contact_email">
+                    <div class="contact_info_images">
+                        <img src="./photos/email.svg" alt="Email">
+                    </div>
+                    <div class="info">
+                        <a href="mailto:rahimirestuarant@gmail.com">rahimirestuarant@gmail.com</a>
+                        <p>Send us an email</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer_opening_hours"></div>
+            <div class="footer_opening_hours">
+                <h2> <span>Openning</span> Hours</h2>
+                <div class="footer_opening_hours_contain">
+                    <img src="./photos/openning_time.svg" alt="openning_time">
+                    <p>Friday - Saturday <br> 07:00 AM - 11:59 PM</p>
+                </div>
+                <hr>
+                <h3>Freesh Foods <br> Better Mood</h3>   
+            </div>
         </div>
+            
+        <p id="footnote">&#169 2026 Rahimi Restaurant. All Rights Reserved</p>
+        
     </footer>
     <script src="./JS/specialdishescards.js"></script>
     <script src="./JS/whychooseUsCards.js"></script>
