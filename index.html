@@ -481,18 +481,26 @@
             gap: 15px;
             margin-bottom: 30px;
         }
-        .contact_info_images img{
+        .contact_info_images{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             width: 35px;
             height: 35px;
-            filter: brightness(0) saturate(100%) invert(79%) sepia(48%) saturate(795%)
-            hue-rotate(344deg) brightness(101%) contrast(91%);  
             border: 1px solid #f4bd48;
-            border-radius: 50%; 
+            border-radius: 50% ;
             transition: 0.3s ease;
         }
-        .contact_info_images img:hover{
+        .contact_info_images:hover{
             transform: scale(0.7);
         }
+        .contact_info_images img{
+            width: 25px;
+            height: 25px;
+            filter: brightness(0) saturate(100%) invert(79%) sepia(48%) saturate(795%)
+            hue-rotate(344deg) brightness(101%) contrast(91%);  
+        }
+        
         .location h3{
             color: white;
             font-family: Georgia, 'Times New Roman', Times, serif;
